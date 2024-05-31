@@ -34,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() {
     setState(() {
       _counter++;
+      _new++;
     });
   }
 
@@ -53,6 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            Text(
+              '$_new',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
